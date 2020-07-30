@@ -1,10 +1,50 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerTheme</item>
+        
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/shark_light</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/shark_light</item>
+
+        <item name="colorStateNavigationItem">@color/menu_colorstate</item>
+        <item name="colorNavigationItemNormal">@color/shark_light</item>
+        <item name="colorNavigationItemSelected">@color/darkcolor</item>
+        <item name="colorNavigationItemBackgroundSelected">@color/lytblue</item>
+        <item name="colorNavigationItemBackgroundPressed">@color/colorAccent</item>
+        <item name="drawableNavigationItemBackground">@drawable/menu_item_color_state</item>
+        <item name="android:listDivider">@color/shuttle_grey</item>
+        <item name="fontFamily">@font/google_sans_medium</item>
     </style>
+
+
+
+
+
+    <style name="widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
+    <item name="itemIconTint">?attr/colorStateNavigationItem</item>
+    <item name="itemTextAppearance">@style/TextAppearance.Custom.Navigation.Item</item>
+    <item name="itemTextColor">?attr/colorStateNavigationItem</item>
+    <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
+
+</style>
+
+    <style name="DrawerTheme" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="TextAppearance.Custom.Navigation.Item" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/shark_light</item>
+        <item name="fontFamily">@font/google_sans_medium</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
 
 </resources>
